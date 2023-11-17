@@ -1,0 +1,33 @@
+{
+  "name": "playwright-nodejs",
+  "version": "1.0.0",
+  "description": "Este projeto tem o objetivo de demonstrar conceitos e formas de utilizar o framework Playwright para a criação de testes e2e e de API",
+  "main": "index.js",
+  "scripts": {
+    "py:test": "playwright test",
+    "py:ui": "playwright test --ui",
+    "py:chrome": "playwright test --project=chromium",
+    "py:todopage": "playwright test tests/toDoPage/",
+    "py:api": "playwright test tests/api/ --project=chromium",
+    "py:debug": "playwright test tests/toDoPage/ --debug",
+    "py:report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/fcmorenotecnologia/playwright-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/fcmorenotecnologia/playwright-nodejs/issues"
+  },
+  "homepage": "https://bitbucket.org/fcmorenotecnologia/playwright-nodejs#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.9.1"
+  },
+  "dependencies": {
+    "jsonschema": "^1.4.1"
+  }
+}
